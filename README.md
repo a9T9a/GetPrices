@@ -1,4 +1,4 @@
-# nazlimmm
+# GetPrices
 
 ## Project setup
 ```

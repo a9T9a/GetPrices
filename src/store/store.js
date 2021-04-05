@@ -3,7 +3,7 @@ import Vuex from "vuex"
 import axios from "axios"
 //import {apparel} from "../data/depo"
 //import {users} from "../data/users"
-import product from "../store/product"
+//import product from "../store/product"
 //import {routes} from "../routes"
 import { db } from "../data/firebase"
 import  getPrices from "../data/prices"
@@ -24,9 +24,6 @@ export const store = new Vuex.Store({
         discounted:[],
         sortingValue:"",
         categories:[]
-    },
-    modules:{
-        product
     },
     getters:{
         getLog(state){
