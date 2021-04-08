@@ -4,18 +4,20 @@
       <router-link tag="div" to="/admin">
         <img src="../assets/user.png" alt="">
       </router-link>
-      
-      <img src="../assets/cart.png" alt="">
+      <router-link tag="div" to="/cart">
+        <img src="../assets/cart.png" alt="">
+      </router-link>
     </div>
     <app-header/>
 
     <div class="main">
-      <div class="list">
+      <!--<div class="list">
         <app-list-view/>
       </div>
       <div class="reklam">
         <p>İNDİRİM</p>
-      </div>
+      </div>-->
+      <app-list-view/>
 
     </div>
   </div>
@@ -40,16 +42,17 @@ export default {
   .main{
     display: flex;
     justify-content: center;
+    width: 100%;
   }
 
-  .list{
-    width: 85vw;
-  }
+  /*.list{
+    width: 85%;
+  }*/
 
   .reklam{
 
     color: red;
-    width: 15vw;
+    width: 15%;
     height: 100%;
     font-size: 10vmin;
     font-family: Arial, Helvetica, sans-serif;

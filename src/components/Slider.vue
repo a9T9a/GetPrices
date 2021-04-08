@@ -39,15 +39,14 @@ export default {
 <style scoped>
     .container .card .card-pic{
     position: relative;
-    width: 24.5vmin;
-    height:35vmin
+    width: 100%;
+    height:100%;
   }
 
   .container .card .card-pic img{
-    max-height: 35vmin;
-    max-width: 100%;
     width: 100%;
-    height: auto;
+    height: 15vmax;
     border-radius: 5px; 
+    object-fit: cover;
   }
 </style>

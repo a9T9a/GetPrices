@@ -1,16 +1,9 @@
 <template>
     <div id="header">
         <router-link id="icon" tag="div" to="/">
-            <img src="../assets/home_bisque.png">
+            <img src="../assets/filter.png">
         </router-link>
-        <!--<router-link tag="div" to="/" class="header-item" @click="e_filter('tumu')">Elbisler</router-link>-->
         <div class="header-item" @click="e_filter(''),isActive=0" :class="{active:isActive==0}">Tümü</div>
-        <!--<div class="header-item" @click="e_filter('Elbise'),isActive=1" :class="{active:isActive==1}">Elbiseler</div>
-        <div class="header-item" @click="e_filter('Kazak'),isActive=2" :class="{active:isActive==2}">Kazak</div>
-        <div class="header-item" @click="e_filter('gunluk'),isActive=3" :class="{active:isActive==3}">Günlük</div>
-        <div class="header-item" @click="e_filter('takim'),isActive=4" :class="{active:isActive==4}">Takım</div>
-        <div class="header-item" @click="e_filter('aksesuar'),isActive=5" :class="{active:isActive==5}">Aksesuar</div>
-        <div class="header-item" @click="e_filter('outlet'),isActive=6" :class="{active:isActive==6}">Outlet</div>-->
         <p class="header-item" v-for="(cat,index) in getCats" :key="index" @click="e_filter(cat),isActive=index+1" :class="{active:isActive==index+1}">{{cat}}</p>
     </div>
 </template>
